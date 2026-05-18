@@ -219,7 +219,7 @@ export default function App() {
               <img
                 src="/LinkedInProfilePic.jpeg"
                 alt="Ankit's Profile"
-                className="relative w-full h-full object-cover rounded-full shadow-2xl shadow-sky-500/40 border-2 border-white/20"
+                className="relative w-full h-full object-cover rounded-full shadow-2xl shadow-sky-500/40 border-2 border-white/20 brightness-110 contrast-105"
               />
               <div className="absolute -inset-3 border-2 border-sky-400/20 rounded-full" />
             </div>
