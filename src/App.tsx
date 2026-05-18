@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Mail, Phone, ExternalLink, ChevronDown, Menu, X, Code2, Brain, Palette, BarChart2, Cpu, Users } from 'lucide-react';
+import { Mail, ExternalLink, ChevronDown, Menu, X, Code2, Brain, Palette, BarChart2, Cpu, Users, Linkedin, Instagram } from 'lucide-react';
 
 const NAV_LINKS = ['About', 'Skills', 'Projects', 'Experience', 'Contact'];
 
@@ -299,15 +299,34 @@ export default function App() {
                 <p className="text-sm text-gray-200">manachapandey@gmail.com</p>
               </div>
             </a>
-            <div className="flex items-center gap-3 bg-[#0d1427] border border-white/10 rounded-2xl px-6 py-4">
-              <div className="w-10 h-10 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400">
-                <Phone size={18} />
+            <a
+              href="https://www.linkedin.com/in/a-nk-i-t-gen-ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 bg-[#0d1427] border border-white/10 hover:border-sky-400/40 rounded-2xl px-6 py-4 transition-all duration-200 hover:-translate-y-1 group"
+            >
+              <div className="w-10 h-10 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-colors">
+                <Linkedin size={18} />
               </div>
               <div className="text-left">
-                <p className="text-xs text-gray-500 mb-0.5">Phone</p>
-                <p className="text-sm text-gray-200">+91-******* ***</p>
+                <p className="text-xs text-gray-500 mb-0.5">LinkedIn</p>
+                <p className="text-sm text-gray-200">a-nk-i-t-gen-ai</p>
               </div>
-            </div>
+            </a>
+            <a
+              href="https://www.instagram.com/a_nk_i_t_genai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 bg-[#0d1427] border border-white/10 hover:border-sky-400/40 rounded-2xl px-6 py-4 transition-all duration-200 hover:-translate-y-1 group"
+            >
+              <div className="w-10 h-10 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-colors">
+                <Instagram size={18} />
+              </div>
+              <div className="text-left">
+                <p className="text-xs text-gray-500 mb-0.5">Instagram</p>
+                <p className="text-sm text-gray-200">a_nk_i_t_genai</p>
+              </div>
+            </a>
           </div>
           <a
             href="https://herschelle-andy.github.io/DawnGreetings/"
@@ -322,10 +341,31 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#0a0f1e] border-t border-white/5 py-8 px-6 text-center text-gray-600 text-sm">
-        <p>
-          Designed & built by <span className="text-sky-400 font-medium">Ankit</span> — AI Generalist & Prompt Engineer
-        </p>
+      <footer className="bg-[#0a0f1e] border-t border-white/5 py-8 px-6 text-gray-600 text-sm">
+        <div className="max-w-6xl mx-auto flex items-center justify-between">
+          <span className="text-sky-400 font-medium">Ankit</span>
+          <p className="text-center flex-1">
+            Designed & built by <span className="text-sky-400 font-medium">Ankit</span> — AI Generalist & Prompt Engineer
+          </p>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.linkedin.com/in/a-nk-i-t-gen-ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-sky-400 transition-colors"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a
+              href="https://www.instagram.com/a_nk_i_t_genai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-sky-400 transition-colors"
+            >
+              <Instagram size={20} />
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   );
