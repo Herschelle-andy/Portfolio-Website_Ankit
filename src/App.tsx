@@ -180,7 +180,7 @@ export default function App() {
           />
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto flex items-center justify-between gap-12">
+        <div className="relative z-10 max-w-7xl mx-auto flex items-center justify-between gap-16 py-20">
           <div className="flex-1 max-w-2xl text-left">
             <div className="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/20 rounded-full px-4 py-1.5 text-sky-400 text-sm font-medium mb-8">
               <span className="w-2 h-2 bg-sky-400 rounded-full animate-pulse" />
@@ -212,16 +212,16 @@ export default function App() {
             </div>
           </div>
 
-          <div className="hidden lg:flex flex-1 items-center justify-center">
-            <div className="relative w-80 h-80">
-              <div className="absolute inset-0 bg-gradient-to-br from-sky-500/30 to-cyan-500/20 rounded-full blur-2xl" />
-              <div className="absolute inset-0 border-2 border-sky-400/30 rounded-full" />
+          <div className="hidden lg:flex lg:flex-1 items-center justify-center flex-shrink-0">
+            <div className="relative w-96 h-96">
+              <div className="absolute inset-0 bg-gradient-to-br from-sky-500/40 to-cyan-500/30 rounded-full blur-3xl animate-pulse" />
+              <div className="absolute inset-0 border-2 border-sky-400/40 rounded-full" />
               <img
                 src="/LinkedInProfilePic.jpeg"
                 alt="Ankit's Profile"
-                className="relative w-full h-full object-cover rounded-full shadow-2xl shadow-sky-500/20 border-2 border-white/10"
+                className="relative w-full h-full object-cover rounded-full shadow-2xl shadow-sky-500/40 border-2 border-white/20"
               />
-              <div className="absolute -inset-2 border border-sky-400/20 rounded-full" />
+              <div className="absolute -inset-3 border-2 border-sky-400/20 rounded-full" />
             </div>
           </div>
         </div>
