@@ -180,34 +180,49 @@ export default function App() {
           />
         </div>
 
-        <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/20 rounded-full px-4 py-1.5 text-sky-400 text-sm font-medium mb-8">
-            <span className="w-2 h-2 bg-sky-400 rounded-full animate-pulse" />
-            Available for opportunities
+        <div className="relative z-10 max-w-6xl mx-auto flex items-center justify-between gap-12">
+          <div className="flex-1 max-w-2xl text-left">
+            <div className="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/20 rounded-full px-4 py-1.5 text-sky-400 text-sm font-medium mb-8">
+              <span className="w-2 h-2 bg-sky-400 rounded-full animate-pulse" />
+              Available for opportunities
+            </div>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-tight">
+              Hi, I&apos;m{' '}
+              <span className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Ankit</span>
+            </h1>
+            <p className="text-lg sm:text-xl text-gray-300 font-light mb-6">AI Generalist & Prompt Engineer</p>
+            <p className="text-gray-400 leading-relaxed mb-10 text-sm sm:text-base">
+              Motivated and analytically driven professional transitioning into AI with hands-on skills in prompt
+              engineering, AI tool selection, and AI literacy. Bringing 9+ years of structured problem-solving across
+              business analysis, data research, and UI design.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <button
+                onClick={() => scrollTo('Projects')}
+                className="bg-sky-500 hover:bg-sky-400 text-white px-8 py-3 rounded-full font-medium transition-all duration-200 hover:shadow-lg hover:shadow-sky-500/30 hover:-translate-y-0.5"
+              >
+                View Projects
+              </button>
+              <button
+                onClick={() => scrollTo('Contact')}
+                className="border border-white/20 hover:border-sky-400/50 text-gray-300 hover:text-white px-8 py-3 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5"
+              >
+                Get in Touch
+              </button>
+            </div>
           </div>
-          <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight mb-4 leading-none">
-            Hi, I&apos;m{' '}
-            <span className="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Ankit</span>
-          </h1>
-          <p className="text-xl sm:text-2xl text-gray-300 font-light mb-6">AI Generalist & Prompt Engineer</p>
-          <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10 text-base sm:text-lg">
-            Motivated and analytically driven professional transitioning into AI with hands-on skills in prompt
-            engineering, AI tool selection, and AI literacy. Bringing 9+ years of structured problem-solving across
-            business analysis, data research, and UI design.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <button
-              onClick={() => scrollTo('Projects')}
-              className="bg-sky-500 hover:bg-sky-400 text-white px-8 py-3 rounded-full font-medium transition-all duration-200 hover:shadow-lg hover:shadow-sky-500/30 hover:-translate-y-0.5"
-            >
-              View Projects
-            </button>
-            <button
-              onClick={() => scrollTo('Contact')}
-              className="border border-white/20 hover:border-sky-400/50 text-gray-300 hover:text-white px-8 py-3 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5"
-            >
-              Get in Touch
-            </button>
+
+          <div className="hidden lg:flex flex-1 items-center justify-center">
+            <div className="relative w-80 h-80">
+              <div className="absolute inset-0 bg-gradient-to-br from-sky-500/30 to-cyan-500/20 rounded-full blur-2xl" />
+              <div className="absolute inset-0 border-2 border-sky-400/30 rounded-full" />
+              <img
+                src="/LinkedInProfilePic.jpeg"
+                alt="Ankit's Profile"
+                className="relative w-full h-full object-cover rounded-full shadow-2xl shadow-sky-500/20 border-2 border-white/10"
+              />
+              <div className="absolute -inset-2 border border-sky-400/20 rounded-full" />
+            </div>
           </div>
         </div>
 
