@@ -291,10 +291,10 @@ export default function App() {
               href="https://www.linkedin.com/in/a-nk-i-t-gen-ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-[#0d1427] border border-white/10 hover:border-sky-400/40 rounded-2xl px-8 py-5 transition-all duration-200 hover:-translate-y-1 group"
+              className="flex items-center gap-3 bg-[#0d1427] border border-white/10 hover:border-sky-400/40 rounded-2xl px-6 py-4 transition-all duration-200 hover:-translate-y-1 group"
             >
-              <div className="w-12 h-12 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-colors">
-                <Linkedin size={22} />
+              <div className="w-10 h-10 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-colors">
+                <Linkedin size={18} />
               </div>
               <div className="text-left">
                 <p className="text-xs text-gray-500 mb-0.5">LinkedIn</p>
