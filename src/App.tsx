@@ -45,6 +45,16 @@ const PROJECTS = [
     icon: <Code2 size={24} />,
   },
   {
+    title: 'Matrix Scientific Calculator',
+    subtitle: 'Web Application',
+    description:
+      'Engineered a fully functional scientific calculator web app supporting 25+ operations—including trigonometry, logarithms, memory functions, and expression parsing—packaged as a single, zero-dependency HTML file. Crafted a production-grade UI with a real-time Matrix rain canvas, keyframe animations, multi-layer glow effects, and a turquoise-on-white design system using pure CSS. Delivered complete keyboard accessibility, DEG/RAD mode toggling, and robust error handling.',
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'Canvas API'],
+    link: 'https://herschelle-andy.github.io/Matrix_Calculator/',
+    color: 'from-cyan-500 to-teal-400',
+    icon: <Code2 size={24} />,
+  },
+  {
     title: 'Fantasy Cricket Game',
     subtitle: 'Full-Stack Application',
     description:
@@ -451,7 +461,7 @@ function ProjectCard({
   icon: React.ReactNode;
 }) {
   return (
-    <div className="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col">
+    <div className="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
       <div className={`h-1.5 bg-gradient-to-r ${color}`} />
       <div className="p-6 flex flex-col flex-1">
         <div
