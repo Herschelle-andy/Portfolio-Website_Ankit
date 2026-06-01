@@ -280,63 +280,78 @@ export default function App() {
 
       {/* Contact */}
       <section id="contact" className="py-24 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto">
           <SectionHeader label="Let's Connect" title="Get in Touch" />
-          <p className="text-gray-400 mt-6 mb-10 leading-relaxed">
+          <p className="text-gray-400 mt-6 mb-16 leading-relaxed text-center max-w-2xl mx-auto">
             I&apos;m actively looking for AI Generalist and Prompt Engineering opportunities. Whether you have a
             project, a role, or just want to connect — my inbox is always open.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <a
+              href="https://linktr.ee/Ank_IT_GenAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit my Linktr.ee profile"
+              className="animate-fade-in-up group relative h-48 bg-gradient-to-br from-[#0d1427] to-[#0a0f1e] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:border-sky-400/50 hover:shadow-lg hover:shadow-sky-500/20 cursor-pointer flex items-center justify-center"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-sky-500/0 to-sky-500/0 group-hover:from-sky-500/10 group-hover:to-sky-500/5 transition-all duration-300" />
+              <div className="relative z-10 flex flex-col items-center justify-center gap-4">
+                <div className="w-14 h-14 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-all duration-300 group-hover:scale-110">
+                  <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M10.5 1.5H13.5V3H10.5V1.5ZM3 3.5H6V5.5H3V3.5ZM18 3.5H21V5.5H18V3.5ZM1.5 10.5V13.5H3V10.5H1.5ZM21 10.5V13.5H22.5V10.5H21ZM3 18V21H6V18H3ZM18 18V21H21V18H18ZM10.5 21V22.5H13.5V21H10.5Z" />
+                  </svg>
+                </div>
+                <span className="text-lg font-bold text-white group-hover:text-sky-300 transition-colors duration-300">Linktr.ee</span>
+              </div>
+            </a>
+
             <a
               href="https://www.linkedin.com/in/a-nk-i-t-gen-ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-[#0d1427] border border-white/10 hover:border-sky-400/40 rounded-2xl px-6 py-4 transition-all duration-200 hover:-translate-y-1 group"
+              aria-label="Visit my LinkedIn profile"
+              className="animate-fade-in-up group relative h-48 bg-gradient-to-br from-[#0d1427] to-[#0a0f1e] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:border-sky-400/50 hover:shadow-lg hover:shadow-sky-500/20 cursor-pointer flex items-center justify-center"
             >
-              <div className="w-10 h-10 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-colors">
-                <Linkedin size={18} />
-              </div>
-              <div className="text-left">
-                <p className="text-xs text-gray-500 mb-0.5">LinkedIn</p>
-                <p className="text-sm text-gray-200">a-nk-i-t-gen-ai</p>
+              <div className="absolute inset-0 bg-gradient-to-br from-sky-500/0 to-sky-500/0 group-hover:from-sky-500/10 group-hover:to-sky-500/5 transition-all duration-300" />
+              <div className="relative z-10 flex flex-col items-center justify-center gap-4">
+                <div className="w-14 h-14 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-all duration-300 group-hover:scale-110">
+                  <Linkedin size={28} />
+                </div>
+                <span className="text-lg font-bold text-white group-hover:text-sky-300 transition-colors duration-300">LinkedIn</span>
               </div>
             </a>
+
             <a
               href="https://www.instagram.com/a_nk_i_t_genai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-[#0d1427] border border-white/10 hover:border-sky-400/40 rounded-2xl px-6 py-4 transition-all duration-200 hover:-translate-y-1 group"
+              aria-label="Visit my Instagram profile"
+              className="animate-fade-in-up group relative h-48 bg-gradient-to-br from-[#0d1427] to-[#0a0f1e] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:border-sky-400/50 hover:shadow-lg hover:shadow-sky-500/20 cursor-pointer flex items-center justify-center"
             >
-              <div className="w-10 h-10 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-colors">
-                <Instagram size={18} />
-              </div>
-              <div className="text-left">
-                <p className="text-xs text-gray-500 mb-0.5">Instagram</p>
-                <p className="text-sm text-gray-200">a_nk_i_t_genai</p>
+              <div className="absolute inset-0 bg-gradient-to-br from-sky-500/0 to-sky-500/0 group-hover:from-sky-500/10 group-hover:to-sky-500/5 transition-all duration-300" />
+              <div className="relative z-10 flex flex-col items-center justify-center gap-4">
+                <div className="w-14 h-14 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-all duration-300 group-hover:scale-110">
+                  <Instagram size={28} />
+                </div>
+                <span className="text-lg font-bold text-white group-hover:text-sky-300 transition-colors duration-300">Instagram</span>
               </div>
             </a>
+
             <a
               href="mailto:manachapandey@gmail.com"
-              className="flex items-center gap-3 bg-[#0d1427] border border-white/10 hover:border-sky-400/40 rounded-2xl px-6 py-4 transition-all duration-200 hover:-translate-y-1 group"
+              aria-label="Send me an email"
+              className="animate-fade-in-up group relative h-48 bg-gradient-to-br from-[#0d1427] to-[#0a0f1e] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:border-sky-400/50 hover:shadow-lg hover:shadow-sky-500/20 cursor-pointer flex items-center justify-center"
             >
-              <div className="w-10 h-10 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-colors">
-                <Mail size={18} />
-              </div>
-              <div className="text-left">
-                <p className="text-xs text-gray-500 mb-0.5">Email</p>
-                <p className="text-sm text-gray-200">manachapandey@gmail.com</p>
+              <div className="absolute inset-0 bg-gradient-to-br from-sky-500/0 to-sky-500/0 group-hover:from-sky-500/10 group-hover:to-sky-500/5 transition-all duration-300" />
+              <div className="relative z-10 flex flex-col items-center justify-center gap-4">
+                <div className="w-14 h-14 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-all duration-300 group-hover:scale-110">
+                  <Mail size={28} />
+                </div>
+                <span className="text-lg font-bold text-white group-hover:text-sky-300 transition-colors duration-300">Email</span>
               </div>
             </a>
           </div>
-          <a
-            href="https://herschelle-andy.github.io/DawnGreetings/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-2 text-sky-400 hover:text-sky-300 text-sm font-medium transition-colors"
-          >
-            View Live Project
-            <ExternalLink size={13} />
-          </a>
         </div>
       </section>
 
