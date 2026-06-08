@@ -55,6 +55,16 @@ const PROJECTS = [
     icon: <Code2 size={24} />,
   },
   {
+    title: 'Income Tax Calculator',
+    subtitle: 'Web Application',
+    description:
+      'Engineered a single-page Indian income tax calculator supporting both New and Old regimes (FY 2024-25), with real-time slab-wise computation including Surcharge, Health and Education Cess, and Section 87A rebate. Designed a premium, Apple-inspired UI featuring dynamic deduction sliders, live donut chart visualization, and a detailed income breakdown — delivered as a fully self-contained, zero-dependency web application.',
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'Canvas API'],
+    link: 'https://herschelle-andy.github.io/IncomeTaxCalculator/',
+    color: 'from-emerald-500 to-emerald-400',
+    icon: <Code2 size={24} />,
+  },
+  {
     title: 'Fantasy Cricket Game',
     subtitle: 'Full-Stack Application',
     description:
