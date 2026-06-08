@@ -41,8 +41,9 @@ const PROJECTS = [
       'Engineered a time-aware web application that synchronizes user greetings with real-time clock data. Features a dynamic messaging engine serving 20 unique variations across four daily phases with a fully responsive UI.',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Replit.AI'],
     link: 'https://herschelle-andy.github.io/DawnGreetings/',
-    color: 'from-sky-500 to-cyan-400',
+    color: 'from-amber-400 to-yellow-400',
     icon: <Code2 size={24} />,
+    image: 'https://images.pexels.com/photos/99106/sunrise-sun-morning-hope-99106.jpeg?w=100&h=100&fit=crop',
   },
   {
     title: 'Matrix Scientific Calculator',
@@ -51,8 +52,9 @@ const PROJECTS = [
       'Engineered a fully functional scientific calculator web app supporting 25+ operations—including trigonometry, logarithms, memory functions, and expression parsing—packaged as a single, zero-dependency HTML file. Crafted a production-grade UI with a real-time Matrix rain canvas, keyframe animations, multi-layer glow effects, and a turquoise-on-white design system using pure CSS. Delivered complete keyboard accessibility, DEG/RAD mode toggling, and robust error handling.',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Canvas API'],
     link: 'https://herschelle-andy.github.io/Matrix_Calculator/',
-    color: 'from-cyan-500 to-teal-400',
+    color: 'from-cyan-400 to-teal-300',
     icon: <Code2 size={24} />,
+    image: 'https://images.pexels.com/photos/632895/pexels-photo-632895.jpeg?w=100&h=100&fit=crop',
   },
   {
     title: 'Income Tax Calculator',
@@ -61,8 +63,9 @@ const PROJECTS = [
       'Engineered a single-page Indian income tax calculator supporting both New and Old regimes (FY 2024-25), with real-time slab-wise computation including Surcharge, Health and Education Cess, and Section 87A rebate. Designed a premium, Apple-inspired UI featuring dynamic deduction sliders, live donut chart visualization, and a detailed income breakdown — delivered as a fully self-contained, zero-dependency web application.',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Canvas API'],
     link: 'https://herschelle-andy.github.io/IncomeTaxCalculator/',
-    color: 'from-emerald-500 to-emerald-400',
+    color: 'from-blue-600 to-blue-400',
     icon: <Code2 size={24} />,
+    image: 'https://images.pexels.com/photos/1002686/pexels-photo-1002686.jpeg?w=100&h=100&fit=crop',
   },
   {
     title: 'Fantasy Cricket Game',
@@ -71,8 +74,9 @@ const PROJECTS = [
       'Platform for users to form virtual cricket teams scoring points based on real-life player performances. Features team creation, management UI, and a competitive ranking system backed by a relational database.',
     tech: ['Python', 'Qt Designer', 'SQLite Studio'],
     link: null,
-    color: 'from-emerald-500 to-teal-400',
+    color: 'from-lime-400 to-green-400',
     icon: <BarChart2 size={24} />,
+    image: 'https://images.pexels.com/photos/36289/sports-cricket-ball.jpg?w=100&h=100&fit=crop',
   },
   {
     title: 'Tourepedia Marketing Blueprint',
@@ -461,6 +465,7 @@ function ProjectCard({
   link,
   color,
   icon,
+  image,
 }: {
   title: string;
   subtitle: string;
@@ -469,15 +474,20 @@ function ProjectCard({
   link: string | null;
   color: string;
   icon: React.ReactNode;
+  image?: string;
 }) {
   return (
     <div className="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
       <div className={`h-1.5 bg-gradient-to-r ${color}`} />
       <div className="p-6 flex flex-col flex-1">
         <div
-          className={`w-10 h-10 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center text-white mb-4 opacity-90`}
+          className={`w-10 h-10 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center text-white mb-4 overflow-hidden`}
         >
-          {icon}
+          {image ? (
+            <img src={image} alt={title} className="w-full h-full object-cover" />
+          ) : (
+            icon
+          )}
         </div>
         <h3 className="font-bold text-lg text-white mb-1">{title}</h3>
         <p className="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wide">{subtitle}</p>
