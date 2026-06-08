@@ -481,7 +481,7 @@ function ProjectCard({
       <div className={`h-1.5 bg-gradient-to-r ${color}`} />
       <div className="p-6 flex flex-col flex-1">
         <div
-          className={`w-10 h-10 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center text-white mb-4 overflow-hidden`}
+          className={`w-16 h-16 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center text-white mb-4 overflow-hidden shadow-lg`}
         >
           {image ? (
             <img src={image} alt={title} className="w-full h-full object-cover" />
