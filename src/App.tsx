@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Mail, ExternalLink, ChevronDown, Menu, X, Code2, Brain, Palette, BarChart2, Cpu, Users, Linkedin, Instagram } from 'lucide-react';
+import { Mail, ExternalLink, ChevronDown, Menu, X, Code2, Brain, Palette, BarChart2, Cpu, Users, Linkedin, Instagram, Sunrise, Calculator, Building2, Trophy } from 'lucide-react';
 
 const NAV_LINKS = ['About', 'Skills', 'Projects', 'Experience', 'Contact'];
 
@@ -42,8 +42,7 @@ const PROJECTS = [
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Replit.AI'],
     link: 'https://herschelle-andy.github.io/DawnGreetings/',
     color: 'from-amber-400 to-yellow-400',
-    icon: <Code2 size={24} />,
-    image: 'https://images.pexels.com/photos/99106/sunrise-sun-morning-hope-99106.jpeg?w=100&h=100&fit=crop',
+    icon: <Sunrise size={22} />,
   },
   {
     title: 'Matrix Scientific Calculator',
@@ -53,8 +52,7 @@ const PROJECTS = [
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Canvas API'],
     link: 'https://herschelle-andy.github.io/Matrix_Calculator/',
     color: 'from-cyan-400 to-teal-300',
-    icon: <Code2 size={24} />,
-    image: 'https://images.pexels.com/photos/632895/pexels-photo-632895.jpeg?w=100&h=100&fit=crop',
+    icon: <Calculator size={22} />,
   },
   {
     title: 'Income Tax Calculator',
@@ -64,8 +62,7 @@ const PROJECTS = [
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Canvas API'],
     link: 'https://herschelle-andy.github.io/IncomeTaxCalculator/',
     color: 'from-blue-600 to-blue-400',
-    icon: <Code2 size={24} />,
-    image: 'https://images.pexels.com/photos/1002686/pexels-photo-1002686.jpeg?w=100&h=100&fit=crop',
+    icon: <Building2 size={22} />,
   },
   {
     title: 'Fantasy Cricket Game',
@@ -75,8 +72,7 @@ const PROJECTS = [
     tech: ['Python', 'Qt Designer', 'SQLite Studio'],
     link: null,
     color: 'from-lime-400 to-green-400',
-    icon: <BarChart2 size={24} />,
-    image: 'https://images.pexels.com/photos/36289/sports-cricket-ball.jpg?w=100&h=100&fit=crop',
+    icon: <Trophy size={22} />,
   },
   {
     title: 'Tourepedia Marketing Blueprint',
@@ -474,20 +470,15 @@ function ProjectCard({
   link: string | null;
   color: string;
   icon: React.ReactNode;
-  image?: string;
 }) {
   return (
     <div className="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
       <div className={`h-1.5 bg-gradient-to-r ${color}`} />
       <div className="p-6 flex flex-col flex-1">
         <div
-          className={`w-16 h-16 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center text-white mb-4 overflow-hidden shadow-lg`}
+          className={`w-12 h-12 rounded-lg bg-gradient-to-br ${color} flex items-center justify-center text-white mb-4 shadow-lg`}
         >
-          {image ? (
-            <img src={image} alt={title} className="w-full h-full object-cover" />
-          ) : (
-            icon
-          )}
+          {icon}
         </div>
         <h3 className="font-bold text-lg text-white mb-1">{title}</h3>
         <p className="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wide">{subtitle}</p>
