@@ -1,0 +1,12 @@
+{
+  "name": "ankit-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Ankit, AI Generalist & Prompt Engineer",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "AnkitPandey",
+  "license": "MIT"
+}
