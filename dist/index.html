@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ankit — AI Generalist & Prompt Engineer</title>
+<meta name="description" content="Portfolio of Ankit, AI Generalist & Prompt Engineer. Prompt engineering, AI tool selection, AI literacy, and 9+ years of structured problem-solving across business analysis, data research, and UI design." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {},
+        keyframes: {
+          fadeInUp: {
+            '0%': { opacity: 0, transform: 'translateY(20px)' },
+            '100%': { opacity: 1, transform: 'translateY(0)' },
+          },
+        },
+        animation: {
+          'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
+  .animate-fade-in-up:nth-child(1) { animation-delay: 0.1s; }
+  .animate-fade-in-up:nth-child(2) { animation-delay: 0.2s; }
+  .animate-fade-in-up:nth-child(3) { animation-delay: 0.3s; }
+  .animate-fade-in-up:nth-child(4) { animation-delay: 0.4s; }
+
+  /* icon helper: simple inline svg sizing */
+  .icon { display: inline-block; vertical-align: middle; }
+</style>
+</head>
+<body class="bg-[#0a0f1e] text-white">
+
+<!-- ===================== NAV ===================== -->
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <span class="text-xl font-bold tracking-tight">Menu</span>
+    <ul class="hidden md:flex gap-8" id="nav-links-desktop">
+      <li><button data-target="about" class="nav-link text-sm font-medium transition-colors duration-200 text-sky-400">About</button></li>
+      <li><button data-target="skills" class="nav-link text-sm font-medium transition-colors duration-200 text-gray-400 hover:text-white">Skills</button></li>
+      <li><button data-target="projects" class="nav-link text-sm font-medium transition-colors duration-200 text-gray-400 hover:text-white">Projects</button></li>
+      <li><button data-target="experience" class="nav-link text-sm font-medium transition-colors duration-200 text-gray-400 hover:text-white">Experience</button></li>
+      <li><button data-target="contact" class="nav-link text-sm font-medium transition-colors duration-200 text-gray-400 hover:text-white">Contact</button></li>
+    </ul>
+    <button id="menu-toggle" class="md:hidden text-gray-400 hover:text-white" aria-label="Toggle menu">
+      <svg id="icon-menu" class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      <svg id="icon-close" class="icon hidden" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </nav>
+  <div id="mobile-menu" class="hidden md:hidden bg-[#0d1427] border-t border-white/5 px-6 py-4 flex-col gap-4 flex">
+    <button data-target="about" class="nav-link-mobile text-sm font-medium text-gray-300 hover:text-sky-400 text-left transition-colors">About</button>
+    <button data-target="skills" class="nav-link-mobile text-sm font-medium text-gray-300 hover:text-sky-400 text-left transition-colors">Skills</button>
+    <button data-target="projects" class="nav-link-mobile text-sm font-medium text-gray-300 hover:text-sky-400 text-left transition-colors">Projects</button>
+    <button data-target="experience" class="nav-link-mobile text-sm font-medium text-gray-300 hover:text-sky-400 text-left transition-colors">Experience</button>
+    <button data-target="contact" class="nav-link-mobile text-sm font-medium text-gray-300 hover:text-sky-400 text-left transition-colors">Contact</button>
+  </div>
+</header>
+
+
+<!-- ===================== HERO / ABOUT ===================== -->
+<section id="about" class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-6">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-sky-600/20 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 right-0 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-blue-700/15 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0); background-size: 40px 40px;"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto flex items-center justify-between gap-16 py-20 flex-col lg:flex-row">
+    <div class="flex-1 max-w-2xl text-left">
+      <div class="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/20 rounded-full px-4 py-1.5 text-sky-400 text-sm font-medium mb-8">
+        <span class="w-2 h-2 bg-sky-400 rounded-full animate-pulse"></span>
+        Available for opportunities
+      </div>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-4 leading-tight">
+        Hi, I'm
+        <span class="bg-gradient-to-r from-sky-400 to-cyan-300 bg-clip-text text-transparent">Ankit</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-300 font-light mb-6">AI Generalist &amp; Prompt Engineer</p>
+      <p class="text-gray-400 leading-relaxed mb-10 text-sm sm:text-base">
+        Motivated and analytically driven professional transitioning into AI with hands-on skills in prompt
+        engineering, AI tool selection, and AI literacy. Bringing 9+ years of structured problem-solving across
+        business analysis, data research, and UI design.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <button data-target="projects" class="nav-link bg-sky-500 hover:bg-sky-400 text-white px-8 py-3 rounded-full font-medium transition-all duration-200 hover:shadow-lg hover:shadow-sky-500/30 hover:-translate-y-0.5">
+          View Projects
+        </button>
+        <button data-target="contact" class="nav-link border border-white/20 hover:border-sky-400/50 text-gray-300 hover:text-white px-8 py-3 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5">
+          Get in Touch
+        </button>
+      </div>
+    </div>
+
+    <div class="hidden lg:flex lg:flex-1 items-center justify-center flex-shrink-0">
+      <div class="relative w-96 h-96">
+        <div class="absolute inset-0 bg-gradient-to-br from-sky-500/40 to-cyan-500/30 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute inset-0 border-2 border-sky-400/40 rounded-full"></div>
+        <img
+          src="/assets/AnkitGBW-DqbqY6LS.png"
+          alt="Ankit's Profile"
+          class="relative w-full h-full object-cover rounded-full shadow-2xl shadow-sky-500/40 border-2 border-white/20 brightness-110 contrast-105"
+        />
+        <div class="absolute -inset-3 border-2 border-sky-400/20 rounded-full"></div>
+      </div>
+    </div>
+  </div>
+
+  <button data-target="skills" class="nav-link absolute bottom-10 left-1/2 -translate-x-1/2 text-gray-500 hover:text-sky-400 transition-colors animate-bounce" aria-label="Scroll to skills">
+    <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="py-24 px-6 bg-[#0d1427]">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center">
+      <p class="text-sky-400 text-sm font-semibold uppercase tracking-widest mb-3">Expertise</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white">Skills &amp; Competencies</h2>
+      <div class="mt-4 flex justify-center">
+        <div class="h-1 w-12 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full"></div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-14">
+
+      <!-- AI & Data -->
+      <div class="bg-[#0a0f1e] border border-white/8 rounded-2xl p-6 hover:border-sky-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-500/5">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-9 h-9 rounded-xl bg-sky-500/15 flex items-center justify-center text-sky-400">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.49A2.5 2.5 0 0 1 4.5 17v-1.49A2.5 2.5 0 0 1 3 13.5v-3a2.5 2.5 0 0 1 1.5-2.01V6.5A2.5 2.5 0 0 1 7 4h.5A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.49A2.5 2.5 0 0 0 19.5 17v-1.49A2.5 2.5 0 0 0 21 13.5v-3a2.5 2.5 0 0 0-1.5-2.01V6.5A2.5 2.5 0 0 0 17 4h-.5A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+          </div>
+          <h3 class="font-semibold text-white">AI &amp; Data</h3>
+        </div>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Prompt Engineering</span><span class="text-gray-500">90%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:90%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">AI Tool Selection</span><span class="text-gray-500">85%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:85%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">AI Literacy</span><span class="text-gray-500">88%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:88%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Python &amp; PL/SQL</span><span class="text-gray-500">70%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:70%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">MS Power BI / Excel</span><span class="text-gray-500">75%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:75%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design & Technical -->
+      <div class="bg-[#0a0f1e] border border-white/8 rounded-2xl p-6 hover:border-sky-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-500/5">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-9 h-9 rounded-xl bg-sky-500/15 flex items-center justify-center text-sky-400">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C22.422 6.012 17.965 2 12 2z"/></svg>
+          </div>
+          <h3 class="font-semibold text-white">Design &amp; Technical</h3>
+        </div>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">UI Design</span><span class="text-gray-500">80%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:80%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Unity (3D Design)</span><span class="text-gray-500">72%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:72%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Autodesk 3Ds Max</span><span class="text-gray-500">65%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:65%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Visual Basics</span><span class="text-gray-500">60%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:60%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">SILVACO / Origin</span><span class="text-gray-500">65%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Competencies -->
+      <div class="bg-[#0a0f1e] border border-white/8 rounded-2xl p-6 hover:border-sky-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-500/5">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-9 h-9 rounded-xl bg-sky-500/15 flex items-center justify-center text-sky-400">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="font-semibold text-white">Core Competencies</h3>
+        </div>
+        <div class="space-y-4">
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Critical Thinking</span><span class="text-gray-500">95%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:95%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Market Analysis</span><span class="text-gray-500">85%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:85%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Stakeholder Management</span><span class="text-gray-500">80%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:80%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Financial Reporting</span><span class="text-gray-500">75%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:75%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs mb-1.5"><span class="text-gray-300">Cross-Dept Collaboration</span><span class="text-gray-500">88%</span></div>
+            <div class="h-1.5 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full transition-all duration-1000" style="width:88%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center">
+      <p class="text-sky-400 text-sm font-semibold uppercase tracking-widest mb-3">Work</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white">Key Projects</h2>
+      <div class="mt-4 flex justify-center">
+        <div class="h-1 w-12 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full"></div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+
+      <!-- Morning Greetings -->
+      <div class="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+        <div class="h-1.5 bg-gradient-to-r from-amber-400 to-yellow-400"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-amber-400 to-yellow-400 flex items-center justify-center text-white mb-4 shadow-lg">
+            <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 18a5 5 0 0 0-10 0"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/><line x1="1" y1="18" x2="3" y2="18"/><line x1="21" y1="18" x2="23" y2="18"/><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/><line x1="23" y1="22" x2="1" y2="22"/><polyline points="8 6 12 2 16 6"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-1">Morning Greetings</h3>
+          <p class="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wide">Dynamic Web Application</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5 flex-1">Engineered a time-aware web application that synchronizes user greetings with real-time clock data. Features a dynamic messaging engine serving 20 unique variations across four daily phases with a fully responsive UI.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">HTML5</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">CSS3</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">JavaScript</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Replit.AI</span>
+          </div>
+          <a href="https://herschelle-andy.github.io/DawnGreetings/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sky-400 hover:text-sky-300 text-sm font-medium transition-colors">
+            Live Demo
+            <svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Matrix Scientific Calculator -->
+      <div class="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+        <div class="h-1.5 bg-gradient-to-r from-cyan-400 to-teal-300"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 to-teal-300 flex items-center justify-center text-white mb-4 shadow-lg">
+            <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-1">Matrix Scientific Calculator</h3>
+          <p class="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wide">Web Application</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5 flex-1">Engineered a fully functional scientific calculator web app supporting 25+ operations—including trigonometry, logarithms, memory functions, and expression parsing—packaged as a single, zero-dependency HTML file. Crafted a production-grade UI with a real-time Matrix rain canvas, keyframe animations, multi-layer glow effects, and a turquoise-on-white design system using pure CSS. Delivered complete keyboard accessibility, DEG/RAD mode toggling, and robust error handling.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">HTML5</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">CSS3</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">JavaScript</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Canvas API</span>
+          </div>
+          <a href="https://herschelle-andy.github.io/Matrix_Calculator/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sky-400 hover:text-sky-300 text-sm font-medium transition-colors">
+            Live Demo
+            <svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Income Tax Calculator -->
+      <div class="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+        <div class="h-1.5 bg-gradient-to-r from-blue-600 to-blue-400"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-blue-400 flex items-center justify-center text-white mb-4 shadow-lg">
+            <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><line x1="10" y1="6" x2="14" y2="6"/><line x1="10" y1="10" x2="14" y2="10"/><line x1="10" y1="14" x2="14" y2="14"/><line x1="10" y1="18" x2="14" y2="18"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-1">Income Tax Calculator</h3>
+          <p class="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wide">Web Application</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5 flex-1">Engineered a single-page Indian income tax calculator supporting both New and Old regimes (FY 2024-25), with real-time slab-wise computation including Surcharge, Health and Education Cess, and Section 87A rebate. Designed a premium, Apple-inspired UI featuring dynamic deduction sliders, live donut chart visualization, and a detailed income breakdown — delivered as a fully self-contained, zero-dependency web application.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">HTML5</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">CSS3</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">JavaScript</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Canvas API</span>
+          </div>
+          <a href="https://herschelle-andy.github.io/IncomeTaxCalculator/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sky-400 hover:text-sky-300 text-sm font-medium transition-colors">
+            Live Demo
+            <svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Fantasy Cricket Game -->
+      <div class="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+        <div class="h-1.5 bg-gradient-to-r from-lime-400 to-green-400"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-lime-400 to-green-400 flex items-center justify-center text-white mb-4 shadow-lg">
+            <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-1">Fantasy Cricket Game</h3>
+          <p class="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wide">Full-Stack Application</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5 flex-1">Platform for users to form virtual cricket teams scoring points based on real-life player performances. Features team creation, management UI, and a competitive ranking system backed by a relational database.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Python</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Qt Designer</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">SQLite Studio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tourepedia Marketing Blueprint -->
+      <div class="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+        <div class="h-1.5 bg-gradient-to-r from-amber-500 to-orange-400"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-amber-500 to-orange-400 flex items-center justify-center text-white mb-4 shadow-lg">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-1">Tourepedia Marketing Blueprint</h3>
+          <p class="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wide">Business Strategy Project</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5 flex-1">Analyzed the Indian Online Travel Market using ERRC grid and SWOT analysis. Developed a tailored marketing mix (4Ps) aligned with organizational goals and competitive positioning.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">ERRC Grid</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">SWOT Analysis</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Market Research</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HDI Review -->
+      <div class="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+        <div class="h-1.5 bg-gradient-to-r from-rose-500 to-pink-400"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-rose-500 to-pink-400 flex items-center justify-center text-white mb-4 shadow-lg">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.49A2.5 2.5 0 0 1 4.5 17v-1.49A2.5 2.5 0 0 1 3 13.5v-3a2.5 2.5 0 0 1 1.5-2.01V6.5A2.5 2.5 0 0 1 7 4h.5A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.49A2.5 2.5 0 0 0 19.5 17v-1.49A2.5 2.5 0 0 0 21 13.5v-3a2.5 2.5 0 0 0-1.5-2.01V6.5A2.5 2.5 0 0 0 17 4h-.5A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-1">Human Development Index Review</h3>
+          <p class="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wide">Data Research &amp; Analysis</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5 flex-1">Conducted a data-driven review of HDI methodologies focused on India. Calculated Inequality-adjusted HDI (IHDI), Multidimensional Poverty Index (MPI), and Gender Development Index (GDI).</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Data Analysis</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Statistical Modeling</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">HDI Methodology</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solar Devices / OLEDs Simulation -->
+      <div class="group bg-[#0d1427] border border-white/8 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col h-full">
+        <div class="h-1.5 bg-gradient-to-r from-blue-500 to-sky-400"></div>
+        <div class="p-6 flex flex-col flex-1">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-sky-400 flex items-center justify-center text-white mb-4 shadow-lg">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          </div>
+          <h3 class="font-bold text-lg text-white mb-1">Solar Devices / OLEDs Simulation</h3>
+          <p class="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wide">Optical &amp; Electrical Engineering</p>
+          <p class="text-gray-400 text-sm leading-relaxed mb-5 flex-1">Simulated OLED performance using SILVACO, analyzing Continuity Equations and Schottky contact conditions. Evaluated and optimized OLED outcoupling efficiency through electroluminescence simulations.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">SILVACO</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Electroluminescence</span>
+            <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Schottky Analysis</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience" class="py-24 px-6 bg-[#0d1427]">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center">
+      <p class="text-sky-400 text-sm font-semibold uppercase tracking-widest mb-3">Background</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white">Experience</h2>
+      <div class="mt-4 flex justify-center">
+        <div class="h-1 w-12 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full"></div>
+      </div>
+    </div>
+
+    <div class="mt-14 space-y-6">
+      <div class="bg-[#0a0f1e] border border-white/8 rounded-2xl p-6 hover:border-sky-500/20 transition-all duration-300">
+        <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
+          <div>
+            <h3 class="font-bold text-white text-lg">Game Designer &amp; Developer (Intern)</h3>
+            <p class="text-sky-400 text-sm font-medium mt-0.5">Bhramm Technologies Private Ltd.</p>
+          </div>
+          <span class="inline-block bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap h-fit">Internship</span>
+        </div>
+        <ul class="space-y-2 mb-5">
+          <li class="flex gap-3 text-sm text-gray-400">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-sky-500/60 shrink-0"></span>
+            Designed and developed an interactive 3D menu in Unity, enhancing UX with smooth navigation.
+          </li>
+          <li class="flex gap-3 text-sm text-gray-400">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-sky-500/60 shrink-0"></span>
+            Implemented object creation techniques and scripted functionalities for interactive elements; integrated high-quality 3D models.
+          </li>
+          <li class="flex gap-3 text-sm text-gray-400">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-sky-500/60 shrink-0"></span>
+            Applied advanced lighting, texturing, and shadowing techniques to create realistic, immersive environments.
+          </li>
+        </ul>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Unity</span>
+          <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">3D Design</span>
+          <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">Scripting</span>
+          <span class="bg-white/5 border border-white/8 text-gray-400 text-xs px-2.5 py-1 rounded-full">UX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center">
+      <p class="text-sky-400 text-sm font-semibold uppercase tracking-widest mb-3">Let's Connect</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white">Get in Touch</h2>
+      <div class="mt-4 flex justify-center">
+        <div class="h-1 w-12 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full"></div>
+      </div>
+    </div>
+    <p class="text-gray-400 mt-6 mb-16 leading-relaxed text-center max-w-2xl mx-auto">
+      I'm actively looking for AI Generalist and Prompt Engineering opportunities. Whether you have a
+      project, a role, or just want to connect — my inbox is always open.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+
+      <a href="https://linktr.ee/Ank_IT_GenAI" target="_blank" rel="noopener noreferrer" aria-label="Visit my Linktr.ee profile"
+         class="animate-fade-in-up group relative h-48 bg-gradient-to-br from-[#0d1427] to-[#0a0f1e] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:border-sky-400/50 hover:shadow-lg hover:shadow-sky-500/20 cursor-pointer flex items-center justify-center">
+        <div class="absolute inset-0 bg-gradient-to-br from-sky-500/0 to-sky-500/0 group-hover:from-sky-500/10 group-hover:to-sky-500/5 transition-all duration-300"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center gap-4">
+          <div class="w-14 h-14 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-all duration-300 group-hover:scale-110">
+            <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5 1.5H13.5V3H10.5V1.5ZM3 3.5H6V5.5H3V3.5ZM18 3.5H21V5.5H18V3.5ZM1.5 10.5V13.5H3V10.5H1.5ZM21 10.5V13.5H22.5V10.5H21ZM3 18V21H6V18H3ZM18 18V21H21V18H18ZM10.5 21V22.5H13.5V21H10.5Z"/></svg>
+          </div>
+          <span class="text-lg font-bold text-white group-hover:text-sky-300 transition-colors duration-300">Linktr.ee</span>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/a-nk-i-t-gen-ai/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile"
+         class="animate-fade-in-up group relative h-48 bg-gradient-to-br from-[#0d1427] to-[#0a0f1e] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:border-sky-400/50 hover:shadow-lg hover:shadow-sky-500/20 cursor-pointer flex items-center justify-center">
+        <div class="absolute inset-0 bg-gradient-to-br from-sky-500/0 to-sky-500/0 group-hover:from-sky-500/10 group-hover:to-sky-500/5 transition-all duration-300"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center gap-4">
+          <div class="w-14 h-14 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-all duration-300 group-hover:scale-110">
+            <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <span class="text-lg font-bold text-white group-hover:text-sky-300 transition-colors duration-300">LinkedIn</span>
+        </div>
+      </a>
+
+      <a href="https://www.instagram.com/a_nk_i_t_genai/" target="_blank" rel="noopener noreferrer" aria-label="Visit my Instagram profile"
+         class="animate-fade-in-up group relative h-48 bg-gradient-to-br from-[#0d1427] to-[#0a0f1e] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:border-sky-400/50 hover:shadow-lg hover:shadow-sky-500/20 cursor-pointer flex items-center justify-center">
+        <div class="absolute inset-0 bg-gradient-to-br from-sky-500/0 to-sky-500/0 group-hover:from-sky-500/10 group-hover:to-sky-500/5 transition-all duration-300"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center gap-4">
+          <div class="w-14 h-14 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-all duration-300 group-hover:scale-110">
+            <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+          <span class="text-lg font-bold text-white group-hover:text-sky-300 transition-colors duration-300">Instagram</span>
+        </div>
+      </a>
+
+      <a href="mailto:manachapandey@gmail.com" aria-label="Send me an email"
+         class="animate-fade-in-up group relative h-48 bg-gradient-to-br from-[#0d1427] to-[#0a0f1e] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:border-sky-400/50 hover:shadow-lg hover:shadow-sky-500/20 cursor-pointer flex items-center justify-center">
+        <div class="absolute inset-0 bg-gradient-to-br from-sky-500/0 to-sky-500/0 group-hover:from-sky-500/10 group-hover:to-sky-500/5 transition-all duration-300"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center gap-4">
+          <div class="w-14 h-14 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400 group-hover:bg-sky-500/25 transition-all duration-300 group-hover:scale-110">
+            <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <span class="text-lg font-bold text-white group-hover:text-sky-300 transition-colors duration-300">Email</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-[#0a0f1e] border-t border-white/5 py-8 px-6 text-gray-600 text-sm">
+  <div class="max-w-6xl mx-auto flex items-center justify-between flex-col sm:flex-row gap-4 text-center sm:text-left">
+    <span class="text-sky-400 font-medium">Ankit</span>
+    <p class="text-center flex-1">
+      &copy; 2026 AnkitPandey. All rights reserved.
+    </p>
+    <div class="flex items-center gap-4">
+      <a href="https://www.linkedin.com/in/a-nk-i-t-gen-ai/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-sky-400 transition-colors" aria-label="LinkedIn">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://www.instagram.com/a_nk_i_t_genai/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-sky-400 transition-colors" aria-label="Instagram">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var NAV_IDS = ['about', 'skills', 'projects', 'experience', 'contact'];
+    var header = document.getElementById('site-header');
+    var menuToggle = document.getElementById('menu-toggle');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var iconMenu = document.getElementById('icon-menu');
+    var iconClose = document.getElementById('icon-close');
+
+    // Smooth scroll for all nav buttons (desktop + mobile + in-page CTAs)
+    document.querySelectorAll('[data-target]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-target');
+        var el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+        mobileMenu.classList.add('hidden');
+        iconMenu.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      });
+    });
+
+    // Mobile menu toggle
+    menuToggle.addEventListener('click', function () {
+      var isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        iconMenu.classList.add('hidden');
+        iconClose.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+        iconMenu.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      }
+    });
+
+    // Header background on scroll
+    function onScrollHeader() {
+      if (window.scrollY > 40) {
+        header.classList.add('bg-[#0a0f1e]/95', 'backdrop-blur-md', 'shadow-lg', 'shadow-black/20', 'border-b', 'border-white/5');
+      } else {
+        header.classList.remove('bg-[#0a0f1e]/95', 'backdrop-blur-md', 'shadow-lg', 'shadow-black/20', 'border-b', 'border-white/5');
+      }
+    }
+
+    // Scroll spy for active nav link
+    function onScrollSpy() {
+      var active = 'about';
+      for (var i = NAV_IDS.length - 1; i >= 0; i--) {
+        var el = document.getElementById(NAV_IDS[i]);
+        if (el && window.scrollY >= el.offsetTop - 120) {
+          active = NAV_IDS[i];
+          break;
+        }
+      }
+      document.querySelectorAll('.nav-link').forEach(function (link) {
+        if (link.getAttribute('data-target') === active) {
+          link.classList.add('text-sky-400');
+          link.classList.remove('text-gray-400');
+        } else if (link.parentElement && link.parentElement.tagName === 'LI') {
+          link.classList.remove('text-sky-400');
+          link.classList.add('text-gray-400');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', function () {
+      onScrollHeader();
+      onScrollSpy();
+    }, { passive: true });
+
+    onScrollHeader();
+    onScrollSpy();
+  })();
+</script>
+
+</body>
+</html>
