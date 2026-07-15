@@ -1,0 +1,14 @@
+{
+  "name": "ankit-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio of Ankit, AI Generalist & Prompt Engineer",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
